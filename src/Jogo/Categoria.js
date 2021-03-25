@@ -12,10 +12,10 @@ const Categoria = props => {
             <Grid.Column>
                 <Segment circular style={tamanho}>
                     <Header as='h2'>
-                        Esporte
                         <Header.Subheader>
-                            <Icon name='globe'/>
+                            <Icon name={props.icone}/>
                         </Header.Subheader>
+                        {props.titulo}
                     </Header>
                 </Segment>
             </Grid.Column>
