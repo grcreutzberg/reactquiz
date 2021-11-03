@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
-import { Container, Label, List, ListContent } from 'semantic-ui-react';
+import { Container, List  } from 'semantic-ui-react';
+import Resposta from './Resposta';
 
+const resposta = {
+    id: 1,
+    titulo: 'Primeira pergunta',
+    alternativa: 3
+}
 class Resultado extends Component {
     render() {
         return (
@@ -9,27 +15,9 @@ class Resultado extends Component {
                 <p>Confira seus resultados nesta categoria</p>
                 <Container>
                     <List divided>
-                        <List.Item>
-                            <ListContent floated='left'>
-                                <Label>1</Label>
-                            TextoTESTE
-                        </ListContent>
-                            <ListContent floated='right'>2</ListContent>
-                        </List.Item>
-                        <List.Item>
-                            <ListContent floated='left'>
-                                <Label>2</Label>
-                            TextoTESTE
-                        </ListContent>
-                            <ListContent floated='right'>1</ListContent>
-                        </List.Item>
-                        <List.Item>
-                            <ListContent floated='left'>
-                                <Label>3</Label>
-                            TextoTESTE
-                        </ListContent>
-                            <ListContent floated='right'>3</ListContent>
-                        </List.Item>
+                        <Resposta resposta={resposta}/>
+                        <Resposta resposta={resposta}/>
+                        <Resposta resposta={resposta}/>
                     </List>
                 </Container>
             </div>
