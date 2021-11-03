@@ -1,32 +1,40 @@
 import React from 'react';
-import { Button, Grid, Radio } from 'semantic-ui-react';
+import { Button, Grid, Radio, Message } from 'semantic-ui-react';
 
 const Perguntas = props => {
-    return(
+    return (
         <div>
             <h2>Perguntas sobre profissões</h2>
             <p>Mostre que vcê sabe tudo sobre esse assunto</p>
-            
+
             <h3>Pergunta: qual é a profissão ......</h3>
             <Grid columns={2}>
                 <Grid.Row>
                     <Grid.Column>
-                        <Radio toggle/>
-                        Anternativa X
+                        <Message color='yellow'>
+                            <p>Anternativa X</p>
+                            <Radio toggle />
+                        </Message>
                     </Grid.Column>
                     <Grid.Column>
-                        <Radio toggle/>
-                        Anternativa X
+                        <Message color='teal'>
+                            <p>Anternativa X</p>
+                            <Radio toggle />
+                        </Message>
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
                     <Grid.Column>
-                        <Radio toggle/>
-                        Anternativa X
+                        <Message color='blue'>
+                            <p>Anternativa X</p>
+                            <Radio toggle />
+                        </Message>
                     </Grid.Column>
                     <Grid.Column>
-                        <Radio toggle/>
-                        Anternativa X
+                        <Message color='brown'>
+                            <p>Anternativa X</p>
+                            <Radio toggle />
+                        </Message>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
