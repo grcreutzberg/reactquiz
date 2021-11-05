@@ -1,9 +1,29 @@
 import React, { Component } from 'react';
-import { Container, Image, Label, List, ListContent } from 'semantic-ui-react';
+import { Container, List } from 'semantic-ui-react';
+import Usuario from './Usuario';
 
-const ranking = {
+const usuario1 = {
+    img: '',
     nome: 'Gustavo Creutzberg',
     pontos: 100
+}
+
+const usuario2 = {
+    img: '',
+    nome: 'Dante',
+    pontos: 85
+}
+
+const usuario3 = {
+    img: '',
+    nome: 'Ramon',
+    pontos: 65
+}
+
+const usuario4 = {
+    img: '',
+    nome: 'Ledesma',
+    pontos: 40
 }
 
 class Ranking extends Component {
@@ -14,17 +34,10 @@ class Ranking extends Component {
                 <p>Confira seu desenpenho nesta categoria</p>
                 <Container>
                     <List divided>
-                        <List.Item>
-                            <ListContent floated='left'>
-                                <Label>
-                                    <Image avatar src=''/>
-                                </Label>
-                                {ranking.nome}
-                            </ListContent>
-                            <ListContent floated='right'>
-                                {ranking.pontos}
-                            </ListContent>
-                        </List.Item>
+                        <Usuario usuario={usuario1}/>
+                        <Usuario usuario={usuario2}/>
+                        <Usuario usuario={usuario3}/>
+                        <Usuario usuario={usuario4}/>
                     </List>
                 </Container>
             </div>
