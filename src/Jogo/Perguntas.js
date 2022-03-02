@@ -1,11 +1,11 @@
 import React from 'react';
 import { Button, Grid, Radio, Message } from 'semantic-ui-react';
-import Header from './Header';
+import Navegacao from './Navegacao';
 
 const Perguntas = props => {
     return (
         <div>
-            <Header/>
+            <Navegacao/>
             <h2>Perguntas sobre profissões</h2>
             <p>Mostre que vcê sabe tudo sobre esse assunto</p>
 

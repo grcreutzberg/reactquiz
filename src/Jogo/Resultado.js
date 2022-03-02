@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, List  } from 'semantic-ui-react';
-import Header from './Header';
+import Navegacao from './Navegacao';
 import Resposta from './Resposta';
 
 const resposta = {
@@ -12,7 +12,7 @@ class Resultado extends Component {
     render() {
         return (
             <div>
-                <Header/>
+                <Navegacao/>
                 <h2>Seus resultados</h2>
                 <p>Confira seus resultados nesta categoria</p>
                 <Container>

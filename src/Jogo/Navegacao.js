@@ -2,11 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Image, Menu } from 'semantic-ui-react';
 
-const Header = props => {
+const Navegacao = props => {
     return (
         <div>
             <header className="App-header">
-
                 <Menu>
                     <Menu.Item><strong>Quiz</strong></Menu.Item>
                     <Menu.Item as={Link} to={'/'}>Home</Menu.Item>
@@ -26,4 +25,4 @@ const Header = props => {
     );
 }
 
-export default Header;
+export default Navegacao;
