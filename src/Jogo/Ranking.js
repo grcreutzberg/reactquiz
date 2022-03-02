@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, List } from 'semantic-ui-react';
+import Header from './Header';
 import Usuario from './Usuario';
 
 const usuario1 = {
@@ -30,6 +31,7 @@ class Ranking extends Component {
     render() {
         return (
             <div>
+                <Header/>
                 <h2>RANKING</h2>
                 <p>Confira seu desenpenho nesta categoria</p>
                 <Container>

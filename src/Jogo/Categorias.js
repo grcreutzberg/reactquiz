@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import { Grid } from 'semantic-ui-react';
 import Categoria from './Categoria';
+import Header from './Header';
 
 class Categorias extends Component {
     render(){
         return(
             <div>
+                <Header/>
                 <h2>Lista de categorias</h2>
                 <p>Selecione a categorias que você deseja responder as perguntas</p>
                 <Grid columns={5}>
