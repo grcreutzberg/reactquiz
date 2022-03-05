@@ -1,5 +1,7 @@
-import firebase from 'firebase';
-import rebase from 're-base';
+import { initializeApp } from 'firebase/app';
+import { getAuth, FacebookAuthProvider, TwitterAuthProvider } from "firebase/auth";
+//import { getDatabase } from "firebase/database";
+//import Rebase from 're-base';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCB-L8UlBpnjsS11qcSiR8HJclI2mftX9I",
@@ -11,13 +13,13 @@ const firebaseConfig = {
     measurementId: "G-XFLEWJTBJB"
 };
 
-const db = firebase.database(firebaseConfig);
-const config = rebase.createClass(db);
+const app = initializeApp(firebaseConfig);
+//const database = getDatabase(app);
 
 export const providers = {
-    'facebook': new firebase.auth.FacebookAuthProvider,
-    'twitter': new firebase.auth.TwitterAuthProvider
-}  
+    'facebook': new FacebookAuthProvider(),
+    'twitter': new TwitterAuthProvider()
+}
 
-export const auth = firebaseConfig.auth();
-export default config;
+export const auth = getAuth();
+//export default config;
