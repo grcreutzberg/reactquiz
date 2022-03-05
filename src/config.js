@@ -14,4 +14,10 @@ const firebaseConfig = {
 const db = firebase.database(firebaseConfig);
 const config = rebase.createClass(db);
 
+export const providers = {
+    'facebook': new firebase.auth.FacebookAuthProvider,
+    'twitter': new firebase.auth.TwitterAuthProvider
+}  
+
+export const auth = firebaseConfig.auth();
 export default config;
